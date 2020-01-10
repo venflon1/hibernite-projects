@@ -1,0 +1,16 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="it.roberto.hibernate.entity.User" table="USER_H8">
+		<id name="id" column="ID_USER" type="int">
+		</id>
+		<property name="username" type="string"
+			column="USERNAME_USER" />
+		<property name="email" type="string" column="EMAIL_USER" />
+		<property name="password" type="string"
+			column="PASSWORD_USER" />
+	</class>
+</hibernate-mapping>
