@@ -1,0 +1,23 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name = "com.roberto.hibernate.second_hibernate.entity.Utente" table = "utente">
+      
+      <meta attribute = "class-description">
+         This class contains the Utente detail. 
+      </meta>
+      
+      <id name = "id" type = "long" column = "ID">
+         <generator class="native"/>
+      </id>
+      
+      <property name = "username" column = "NOME_UTENTE" type = "string"/>
+      <property name = "email" column = "INDIRIZZO_EMAIL" type = "string"/>
+      <property name = "password" column = "PASSWORD" type = "string"/>
+      <property name = "timestamp" column = "DATA_REGISTRAZIONE" type = "timestamp"/>
+      
+   </class>
+</hibernate-mapping>
