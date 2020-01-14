@@ -42,8 +42,8 @@ public class UtenteRepositoryImplTest {
 	@Test
 	public void updateTest() {
 		UtenteRepository userRepository = new UtenteRepositoryImpl();
-		Utente msgToUpdate = new Utente("pluto", "pluto.disney@email.it", "pppppaaaa", Timestamp.valueOf(LocalDateTime.now()));
 		long id = 1;
+		Utente msgToUpdate = new Utente(id, "pluto", "pluto.disney@email.it", "pppppaaaa", Timestamp.valueOf(LocalDateTime.now()));
 		Utente msgUpdated = userRepository.update(id, msgToUpdate);
 		assertEquals("pluto", userRepository.findById(new Long(id)).getUsername());
 	}
