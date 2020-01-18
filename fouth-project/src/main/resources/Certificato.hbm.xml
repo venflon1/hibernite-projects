@@ -1,0 +1,25 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class
+		name="com.roberto.hibernate.fouth_project.entity.Certificato"
+		table="CERTIFICATO">
+
+		<meta attribute="class-description">
+			This class contains the Utente detail.
+		</meta>
+
+		<id name="id" type="long" column="ID">
+			<generator class="native" />
+		</id>
+
+		<property name="nomeCertificato" column="NOME_CERTIFICATO"
+			type="string" />
+
+<!-- 		<many-to-one name="impiegato" column="IMPIEGATO.ID" cascade="all"></many-to-one> -->
+
+	</class>
+</hibernate-mapping>

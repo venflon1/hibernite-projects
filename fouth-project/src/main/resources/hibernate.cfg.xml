@@ -24,5 +24,6 @@
 		</property>
 
 		<mapping resource="Impiegato.hbm.xml" />
+		<mapping resource="Certificato.hbm.xml" />
 	</session-factory>
 </hibernate-configuration>

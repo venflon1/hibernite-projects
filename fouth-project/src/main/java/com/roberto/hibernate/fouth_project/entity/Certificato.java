@@ -1,6 +1,7 @@
 package com.roberto.hibernate.fouth_project.entity;
 
 import java.io.Serializable;
+import java.util.Set;
 
 public class Certificato implements Serializable{
 
@@ -8,6 +9,7 @@ public class Certificato implements Serializable{
 	
 	private Long id;
 	private String nomeCertificato;
+	private Impiegato impiegato;
 	
 	public Certificato() {
 		super();
@@ -27,6 +29,16 @@ public class Certificato implements Serializable{
 
 	public void setNomeCertificato(String nomeCertificato) {
 		this.nomeCertificato = nomeCertificato;
+	}
+	
+	
+
+	public Impiegato getImpiegato() {
+		return impiegato;
+	}
+
+	public void setImpiegato(Impiegato impiegato) {
+		this.impiegato = impiegato;
 	}
 
 	@Override
